@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@800&family=Cairo:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:'Cairo',sans-serif;color:#f8f0df;background:#0b0907;font-synthesis:none;text-rendering:optimizeLegibility;--black:#0b0907;--black2:#14100c;--gold:#d6a354;--gold2:#f5c77b;--sand:#f2e4ca;--muted:#c2b5a0;--line:rgba(220,169,91,.35);--max:1380px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:var(--black);color:#f7efdf}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}img{display:block;max-width:100%}h1,h2,h3,p{margin-top:0}.app-shell{overflow:hidden;min-height:100vh}.section-wrap{width:min(calc(100% - 64px),var(--max));margin-inline:auto}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold2);font-size:.78rem;font-weight:800;letter-spacing:.08em}.eyebrow:before{content:'';width:22px;height:1px;background:currentColor}.section-heading{text-align:center;max-width:760px;margin:0 auto 38px}.section-heading h2{font-size:clamp(1.8rem,3.4vw,3.1rem);line-height:1.25;margin:12px 0;color:#fff3dd}.section-heading p{color:var(--muted);line-height:2;margin:0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 23px;border-radius:999px;font-weight:800;transition:transform .2s,background .2s,border-color .2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:linear-gradient(135deg,#f7ce87,#d9a24f);color:#1b1208;box-shadow:0 10px 28px #0003}.btn-outline{border:1px solid var(--gold);background:#090806b8;color:#f5d8a5}.text-link{display:inline-flex;align-items:center;gap:10px;color:var(--gold2);font-weight:800}.center-action{text-align:center;margin-top:28px}.page-intro{position:relative;min-height:340px;display:flex;align-items:center;background-image:linear-gradient(90deg,rgba(9,7,5,.9),rgba(9,7,5,.43)),var(--intro-image);background-size:cover;background-position:center 48%;border-bottom:1px solid var(--line)}.page-intro-inner{width:min(calc(100% - 64px),var(--max));margin:0 auto;padding:64px 0}.page-intro h1{font-size:clamp(3rem,7vw,6rem);line-height:1.08;margin:14px 0;color:var(--gold2);font-weight:900}.page-intro p{font-size:1.1rem;color:#f9f0df;margin:0;max-width:650px;line-height:1.9}.gold-rule{width:125px;height:1px;background:var(--gold);margin-top:28px;position:relative}.gold-rule span{position:absolute;inset-inline-start:50%;top:-3px;width:7px;height:7px;background:var(--gold2);transform:rotate(45deg)}.floating-whatsapp{position:fixed;z-index:50;bottom:22px;inset-inline-end:22px;display:flex;align-items:center;gap:9px;padding:12px 18px;border-radius:999px;background:#18a85b;color:#fff;box-shadow:0 8px 28px #0006;font-weight:800;font-size:.9rem}.whatsapp-dot{width:8px;height:8px;border-radius:50%;background:white}@media(max-width:700px){.section-wrap{width:calc(100% - 36px)}.page-intro{min-height:275px}.page-intro-inner{width:calc(100% - 36px);padding:45px 0}.page-intro p{font-size:.96rem}.floating-whatsapp{bottom:12px;inset-inline-end:12px;padding:10px 13px}}
+
+/* Visual polish pass: retain the approved black / antique-gold / desert-sand identity. */
+:root{--black:#0b0907;--black2:#15100c;--gold:#c99543;--gold2:#f2c477;--sand:#f4e5cd;--muted:#d0c0a7;--line:rgba(218,169,91,.43);--max:1450px}
+::selection{background:#d5a04e;color:#130d06}
+body{background:#0a0807;color:#fbf1df}
+.section-wrap{width:min(calc(100% - 72px),var(--max))}
+.section-heading h2{letter-spacing:-.025em;text-shadow:0 3px 20px #0003}
+.eyebrow{letter-spacing:.04em}
+.btn{box-shadow:0 7px 20px #0003, inset 0 1px 0 #fff3}
+.btn-gold{background:linear-gradient(120deg,#f8d18c 0%,#e6b35f 52%,#c9903d 100%);border:1px solid #ffe0a2}
+.btn-outline{border-color:#c99543;box-shadow:inset 0 0 0 1px #d8a45225,0 8px 22px #0003}
+.page-intro{background-position:center 53%;box-shadow:inset 0 -25px 50px #08060435}
+.gold-rule{height:2px;background:linear-gradient(90deg,transparent,#d5a04e,transparent)}
+.gold-rule span{box-shadow:0 0 12px #f2c477aa}
+.floating-whatsapp{background:linear-gradient(135deg,#18a861,#0c8e4b);border:1px solid #8ee1b1;box-shadow:0 8px 28px #0007}
+@media(max-width:700px){.section-wrap{width:calc(100% - 32px)}}
+
+/* Shared cinematic title banner used across all six pages. */
+.page-intro {
+  min-height: 340px;
+  justify-content: center;
+  overflow: hidden;
+  background-image:
+    linear-gradient(90deg, rgba(5, 4, 3, 0.78), rgba(5, 4, 3, 0.48) 50%, rgba(5, 4, 3, 0.78)),
+    linear-gradient(0deg, rgba(5, 4, 3, 0.56), transparent 72%),
+    var(--intro-image);
+  background-position: center, center, center 53%;
+  box-shadow: inset 0 -25px 50px rgba(5, 4, 3, 0.3);
+}
+
+.page-intro-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 52px 0;
+  text-align: center;
+}
+
+.page-intro-inner > .eyebrow {
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+.page-intro-title {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-intro h1 {
+  margin: 0 0 10px;
+  color: var(--gold2);
+  font-size: clamp(2.6rem, 6.6vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.12;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff2c7, 0 3px 0 #9c6a2c, 0 5px 22px rgba(0, 0, 0, 0.68);
+}
+
+.page-intro p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #f9f0df;
+  font-size: clamp(0.98rem, 1.35vw, 1.15rem);
+  line-height: 1.9;
+  text-align: center;
+}
+
+.page-intro .gold-rule {
+  height: 2px;
+  margin: 18px auto 0;
+  background: linear-gradient(90deg, transparent, #d5a04e, transparent);
+}
+
+@media (max-width: 700px) {
+  .page-intro {
+    min-height: 275px;
+  }
+
+  .page-intro-inner {
+    width: calc(100% - 36px);
+    padding: 34px 0;
+  }
+
+  .page-intro-inner > .eyebrow {
+    margin-bottom: 10px;
+  }
+
+  .page-intro h1 {
+    font-size: clamp(2.2rem, 9vw, 3.8rem);
+    line-height: 1.18;
+    overflow-wrap: anywhere;
+  }
+
+  .page-intro p {
+    font-size: 0.96rem;
+  }
+
+  .page-intro .gold-rule {
+    margin-top: 15px;
+  }
+}
+
+/* Use one warm near-black across the site's dark surfaces. */
+:root {
+  --black: #050403;
+}
+
+body {
+  background: #050403;
+}
+
+.home-hero,
+.home-why,
+.feature-card,
+.about-value-card,
+.contact-card,
+.address-card,
+.contact-note,
+.whatsapp-qr-card,
+.site-footer,
+.gallery-filters button,
+.gallery-item,
+.lightbox button,
+.map-placeholder,
+.mobile-menu,
+.nav-mobile,
+.product-card,
+.product-card-bottom,
+.product-card-bottom a,
+.products-cta,
+.services-page,
+.service-card,
+.service-card-copy,
+.delivery-banner,
+.delivery-icon {
+  background: #050403;
+}
+
+.btn-outline {
+  background: #050403;
+}
+
+.map-placeholder {
+  background: radial-gradient(ellipse at 50% 50%, #42341e 0%, #20190f 50%, #050403 100%);
+}

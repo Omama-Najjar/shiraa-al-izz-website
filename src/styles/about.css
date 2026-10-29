@@ -1,0 +1,218 @@
+.about-page {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.about-page .page-intro-inner {
+  direction: inherit;
+  text-align: start;
+}
+
+.about-page .page-intro h1,
+.about-page .page-intro p {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.about-page .page-intro .gold-rule {
+  margin-inline: auto;
+}
+
+.about-layout {
+  display: flex;
+  justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.about-copy {
+  min-width: 0;
+  width: min(100%, 850px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.about-copy h2 {
+  margin: 13px 0 24px;
+  font-size: clamp(1.7rem, 3vw, 2.65rem);
+  line-height: 1.35;
+}
+
+.about-copy p {
+  margin-bottom: 17px;
+  color: #d2c5b1;
+  font-size: 0.98rem;
+  line-height: 2.15;
+}
+
+.commercial-registration {
+  padding: 0 24px 76px;
+}
+
+.commercial-registration-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 64px);
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding: clamp(22px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #100d09, #050403 78%);
+  box-shadow: inset 0 1px 0 rgba(245, 199, 123, 0.08), 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.commercial-registration-details {
+  min-width: 0;
+  text-align: start;
+}
+
+.commercial-registration-details h2 {
+  margin: 14px 0 12px;
+  color: #f5d8a5;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.commercial-registration-company {
+  margin-bottom: 20px;
+  color: #f4e5cd;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.commercial-registration-number {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 24px;
+  color: var(--muted);
+}
+
+.commercial-registration-number strong {
+  color: var(--gold2);
+  font-family: Manrope, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.commercial-registration-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 20px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f3cb82, #c99543);
+  color: #130d06;
+  font-weight: 800;
+  transition: transform 200ms ease, filter 200ms ease;
+}
+
+.commercial-registration-link:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+.commercial-registration-preview {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(218, 169, 91, 0.42);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.commercial-registration-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border-block: 1px solid var(--line);
+  background: var(--line);
+}
+
+.about-value-card {
+  min-width: 0;
+  padding: 38px max(24px, calc((100vw - var(--max)) / 6));
+  background: #100d09;
+}
+
+.about-value-card > span {
+  color: var(--gold);
+  font-family: Manrope, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.about-value-card h3 {
+  margin: 12px 0 8px;
+  color: #f5d8a5;
+  font-size: 1.2rem;
+}
+
+.about-value-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.about-page[dir='rtl'] .about-copy,
+.about-page[dir='rtl'] .about-copy h2,
+.about-page[dir='rtl'] .about-copy p,
+.about-page[dir='rtl'] .commercial-registration-details,
+.about-page[dir='rtl'] .about-value-card {
+  direction: rtl;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .about-layout {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+
+  .about-values {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .commercial-registration {
+    padding: 0 18px 55px;
+  }
+
+  .commercial-registration-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-value-card {
+    padding: 28px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .commercial-registration {
+    padding-inline: 16px;
+  }
+
+  .commercial-registration-card {
+    gap: 22px;
+    padding: 20px 16px;
+  }
+
+  .about-copy p {
+    font-size: 0.92rem;
+  }
+
+  .about-value-card {
+    padding-inline: 20px;
+  }
+}
