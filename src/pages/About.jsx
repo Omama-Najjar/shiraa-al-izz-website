@@ -1,9 +1,11 @@
 import PageIntro from '../components/PageIntro';
 import { aboutParagraphs, aboutParagraphsEn } from '../data/content';
+import { assetPath } from '../utils/paths';
 import '../styles/about.css';
 
 export default function About({ lang }) {
   const ar = lang === 'ar';
+  const certificateUrl = assetPath('/images/commercial-registration-certificate.png');
 
   const values = ar
     ? [
@@ -52,7 +54,7 @@ export default function About({ lang }) {
             </p>
             <a
               className="commercial-registration-link"
-              href="/images/commercial-registration-certificate.png"
+              href={certificateUrl}
               target="_blank"
               rel="noreferrer"
             >
@@ -61,13 +63,13 @@ export default function About({ lang }) {
           </div>
           <a
             className="commercial-registration-preview"
-            href="/images/commercial-registration-certificate.png"
+            href={certificateUrl}
             target="_blank"
             rel="noreferrer"
             aria-label={ar ? 'عرض شهادة السجل التجاري كاملة' : 'View the full commercial registration certificate'}
           >
             <img
-              src="/images/commercial-registration-certificate.png"
+              src={certificateUrl}
               alt={ar ? 'شهادة السجل التجاري لمؤسسة شراع العز للخيام' : 'Commercial registration certificate for Sharaa Al-Izz Tents Establishment'}
             />
           </a>

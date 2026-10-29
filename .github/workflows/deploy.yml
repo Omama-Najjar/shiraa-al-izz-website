@@ -1,9 +1,9 @@
-
 name: Deploy Vite website to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -12,20 +12,20 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
@@ -33,16 +33,17 @@ jobs:
 
       - name: Build website
         run: npm run build
-        env:
-          BASE_PATH: /shiraa-al-izz-website/
 
-      - name: Setup Pages
+      - name: Preserve client-side routes on GitHub Pages
+        run: cp dist/index.html dist/404.html
+
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload build artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: dist
 
   deploy:
     environment:

@@ -1,8 +1,10 @@
+import { assetPath } from '../utils/paths';
+
 export default function PageIntro({ eyebrow, title, subtitle, image = '/images/approved-hero-landscape.webp' }) {
   return (
     <section
       className="page-intro"
-      style={{ '--intro-image': `url("${image}")` }}
+      style={{ '--intro-image': `url("${assetPath(image)}")` }}
     >
       <div className="page-intro-inner">
         <span className="eyebrow">{eyebrow}</span>

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, Coffee, Flame, MessageCircle, Phone, Sofa, Tent, Umbrella } from 'lucide-react';
+import { assetPath } from '../utils/paths';
 import '../styles/home.css';
 
 export default function Home({ lang }) {
@@ -93,7 +94,7 @@ export default function Home({ lang }) {
   return (
     <>
       <section className="home-hero" aria-label={ar ? 'الرئيسية' : 'Home'}>
-        <img className="hero-image" src="/images/approved-hero-landscape.webp" alt={ar ? 'خيمة ومجالس عربية' : 'Traditional tent and Arabic majlis'} />
+        <img className="hero-image" src={assetPath('/images/approved-hero-landscape.webp')} alt={ar ? 'خيمة ومجالس عربية' : 'Traditional tent and Arabic majlis'} />
         <div className="hero-overlay" aria-hidden="true" />
 
         <div className="hero-content">

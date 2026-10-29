@@ -1,5 +1,6 @@
 import PageIntro from '../components/PageIntro';
 import { MapPin, Phone, MessageCircle, Clock, MapPinned, ExternalLink, Mail } from 'lucide-react';
+import { assetPath } from '../utils/paths';
 import '../styles/contact.css';
 
 const mapsUrl = 'https://maps.app.goo.gl/X39wA8FnsZVidVB77?g_st=iw';
@@ -64,7 +65,7 @@ export default function Contact({ lang }) {
             </span>
           </div>
           <div className="whatsapp-qr-card">
-            <img src="/images/whatsapp-qr.png" alt={ar ? 'رمز QR للتواصل عبر واتساب' : 'WhatsApp contact QR code'} />
+            <img src={assetPath('/images/whatsapp-qr.png')} alt={ar ? 'رمز QR للتواصل عبر واتساب' : 'WhatsApp contact QR code'} />
             <div>
               <strong>{ar ? 'امسح الرمز للتواصل عبر واتساب' : 'Scan to chat on WhatsApp'}</strong>
               <p>{ar ? 'افتح كاميرا هاتفك ووجّهها إلى الرمز.' : 'Open your phone camera and point it at the code.'}</p>

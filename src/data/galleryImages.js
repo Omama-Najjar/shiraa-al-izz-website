@@ -1,3 +1,5 @@
+import { assetPath } from '../utils/paths';
+
 const galleryImages = [
   {
     src: '/images/gallery/0bc2f68b-ade4-4a2b-8568-2502e374ceb5.jpg',
@@ -234,6 +236,6 @@ const galleryImages = [
     ar: 'خيمة في الموقع',
     en: 'Tent at site',
   },
-];
+].map((image) => ({ ...image, src: assetPath(image.src) }));
 
 export default galleryImages;

@@ -70,6 +70,12 @@ npm run preview
 
 The production files are generated in `dist/`. The preview command serves that build locally.
 
+## Deploy to GitHub Pages
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` builds the site and deploys `dist/` to GitHub Pages. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. Push to the `main` branch or run the workflow manually from the Actions tab.
+
+The Vite base path is configured for this repository at `/shiraa-al-izz-website/`. The workflow also publishes the built entry page as `404.html` so client-side routes continue to load on GitHub Pages.
+
 ## Deploy to Firebase Hosting
 
 Firebase Hosting is configured in `firebase.json` to publish `dist/` and route application paths to `index.html`. The repository does not include a Firebase project selection file, so select the intended Firebase project before deploying.

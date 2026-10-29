@@ -1,3 +1,5 @@
+import { assetPath } from '../utils/paths';
+
 export const navItems = [
   { key: 'home', path: '/', ar: 'الرئيسية', en: 'Home' },
   { key: 'about', path: '/about', ar: 'من نحن', en: 'About us' },
@@ -7,24 +9,24 @@ export const navItems = [
   { key: 'contact', path: '/contact', ar: 'تواصل معنا', en: 'Contact' },
 ];
 export const categories = [
- { id:'tents', ar:'الخيام وبيوت الشعر', en:'Tents & traditional Bedouin houses', image:'/images/tents-bedouin-houses.png' },
- { id:'majlis', ar:'المجالس العربية والجلسات', en:'Arabic majlis & seating', image:'/images/real-majlis-red.webp' },
- { id:'carpets', ar:'السجاد والمفروشات والمراتب', en:'Carpets, furnishings & mattresses', image:'/images/carpets-rugs.png' },
- { id:'truck', ar:'أشرعة التريلات والقلابات والدينات', en:'Truck, trailer & dumper covers', image:'/images/trailer-cover.jpg' },
- { id:'shade', ar:'المظلات والسواتر', en:'Canopies & privacy screens', image:'/images/real-canopy.webp' },
- { id:'heritage', ar:'مستلزمات الرحلات والتراثيات', en:'Camping & heritage essentials', image:'/images/camping-heritage-essentials.png' },
- { id:'livestock', ar:'لوازم الإبل والغنم والخيل', en:'Camel, sheep & horse supplies', image:'/images/real-livestock-shade.webp' },
- { id:'fences', ar:'الشبوك', en:'Fencing & enclosures', image:'/images/products-fence-reference.png' },
+ { id:'tents', ar:'الخيام وبيوت الشعر', en:'Tents & traditional Bedouin houses', image:assetPath('/images/tents-bedouin-houses.png') },
+ { id:'majlis', ar:'المجالس العربية والجلسات', en:'Arabic majlis & seating', image:assetPath('/images/real-majlis-red.webp') },
+ { id:'carpets', ar:'السجاد والمفروشات والمراتب', en:'Carpets, furnishings & mattresses', image:assetPath('/images/carpets-rugs.png') },
+ { id:'truck', ar:'أشرعة التريلات والقلابات والدينات', en:'Truck, trailer & dumper covers', image:assetPath('/images/trailer-cover.jpg') },
+ { id:'shade', ar:'المظلات والسواتر', en:'Canopies & privacy screens', image:assetPath('/images/real-canopy.webp') },
+ { id:'heritage', ar:'مستلزمات الرحلات والتراثيات', en:'Camping & heritage essentials', image:assetPath('/images/camping-heritage-essentials.png') },
+ { id:'livestock', ar:'لوازم الإبل والغنم والخيل', en:'Camel, sheep & horse supplies', image:assetPath('/images/real-livestock-shade.webp') },
+ { id:'fences', ar:'الشبوك', en:'Fencing & enclosures', image:assetPath('/images/products-fence-reference.png') },
 ];
 export const services = [
- {id:'custom-tents',ar:'تفصيل وتجهيز الخيام وبيوت الشعر',en:'Custom tents and traditional Bedouin houses',image:'/images/real-tent-field.webp'},
- {id:'shade-install',ar:'تفصيل وتركيب المظلات والسواتر',en:'Custom canopies and privacy screens',image:'/images/services-canopy-reference.png'},
- {id:'tent-install',ar:'تركيب الخيام',en:'Tent installation',image:'/images/real-tent-side.webp'},
- {id:'truck-covers',ar:'تفصيل أشرعة التريلات والقلابات والدينات',en:'Custom truck and trailer covers',image:'/images/services-trailer-cover-reference.png'},
- {id:'majlis',ar:'تجهيز المجالس والجلسات العربية',en:'Arabic majlis and seating setup',image:'/images/real-majlis-red.webp'},
- {id:'fencing',ar:'تجهيز الشبوك',en:'Fence and enclosure installation',image:'/images/services-fencing-reference.png'},
- {id:'delivery',ar:'التوصيل إلى جميع أنحاء المملكة',en:'Delivery throughout Saudi Arabia',image:'/images/services-delivery-reference.png'},
- {id:'repair',ar:'الصيانة والإصلاح',en:'Maintenance and repairs',image:'/images/services-repair-reference.png'},
+ {id:'custom-tents',ar:'تفصيل وتجهيز الخيام وبيوت الشعر',en:'Custom tents and traditional Bedouin houses',image:assetPath('/images/real-tent-field.webp')},
+ {id:'shade-install',ar:'تفصيل وتركيب المظلات والسواتر',en:'Custom canopies and privacy screens',image:assetPath('/images/services-canopy-reference.png')},
+ {id:'tent-install',ar:'تركيب الخيام',en:'Tent installation',image:assetPath('/images/real-tent-side.webp')},
+ {id:'truck-covers',ar:'تفصيل أشرعة التريلات والقلابات والدينات',en:'Custom truck and trailer covers',image:assetPath('/images/services-trailer-cover-reference.png')},
+ {id:'majlis',ar:'تجهيز المجالس والجلسات العربية',en:'Arabic majlis and seating setup',image:assetPath('/images/real-majlis-red.webp')},
+ {id:'fencing',ar:'تجهيز الشبوك',en:'Fence and enclosure installation',image:assetPath('/images/services-fencing-reference.png')},
+ {id:'delivery',ar:'التوصيل إلى جميع أنحاء المملكة',en:'Delivery throughout Saudi Arabia',image:assetPath('/images/services-delivery-reference.png')},
+ {id:'repair',ar:'الصيانة والإصلاح',en:'Maintenance and repairs',image:assetPath('/images/services-repair-reference.png')},
 ];
 export const aboutParagraphs = [
  'وجهتكم للخيام وبيوت الشعر والمجالس العربية ومستلزمات التراث والرحلات في المدينة المنورة.',
