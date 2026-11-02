@@ -8,16 +8,8 @@ import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import { resolveRoutePath } from './utils/paths';
+import { routes } from './data/routes';
 import './styles/header.css';
-
-const routes = {
-  '/': 'home',
-  '/about': 'about',
-  '/products': 'products',
-  '/services': 'services',
-  '/gallery': 'gallery',
-  '/contact': 'contact',
-};
 
 export default function App() {
   const [lang, setLang] = useState('ar');

@@ -12,6 +12,9 @@ export function routePath(path) {
 export function resolveRoutePath(pathname) {
   const basePath = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
   if (pathname === basePath || pathname === baseUrl) return '/';
-  if (pathname.startsWith(`${basePath}/`)) return pathname.slice(basePath.length);
+  if (pathname.startsWith(`${basePath}/`)) {
+    const route = pathname.slice(basePath.length);
+    return route.length > 1 ? route.replace(/\/+$/, '') : route;
+  }
   return pathname;
 }
