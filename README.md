@@ -31,6 +31,8 @@ Runtime package dependencies are listed in `package.json`; `package-lock.json` r
 ```text
 .
 ├── public/
+│   ├── robots.txt       # Search crawler access and sitemap location
+│   ├── sitemap.xml      # Public website routes
 │   └── images/           # Logo, business photos, gallery, QR code, and other site images
 ├── src/
 │   ├── components/       # Shared header, footer, and page intro

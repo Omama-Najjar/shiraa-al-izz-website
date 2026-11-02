@@ -82,9 +82,9 @@ export default function App() {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.title =
-      (lang === 'ar' ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents') +
-      ' | ' +
-      (lang === 'ar' ? 'المدينة المنورة' : 'Madinah');
+      lang === 'ar'
+        ? 'مؤسسة شراع العز للخيام | خيام وبيوت شعر في المدينة المنورة'
+        : 'Sharaa Al-Izz Tents | Madinah';
   }, [lang, path]);
 
   return (
@@ -98,8 +98,6 @@ export default function App() {
         target="_blank"
         rel="noreferrer"
         aria-label="WhatsApp"
-        aria-hidden={contactCtaVisible}
-        tabIndex={contactCtaVisible ? -1 : undefined}
       >
         <span className="whatsapp-dot" />
         <span>{lang === 'ar' ? 'تواصل معنا' : 'WhatsApp'}</span>
