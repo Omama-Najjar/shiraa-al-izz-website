@@ -22,6 +22,24 @@ const routes = {
 export default function App() {
   const [lang, setLang] = useState('ar');
   const [path, setPath] = useState(() => resolveRoutePath(window.location.pathname));
+  const [contactCtaVisible, setContactCtaVisible] = useState(false);
+
+  useEffect(() => {
+    const contactCtas = document.querySelectorAll('.btn-gold[href*="wa.me"]');
+    const visibleCtas = new Set();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) visibleCtas.add(entry.target);
+        else visibleCtas.delete(entry.target);
+      });
+      setContactCtaVisible(visibleCtas.size > 0);
+    }, { threshold: 0.01 });
+
+    contactCtas.forEach((cta) => observer.observe(cta));
+    if (contactCtas.length === 0) setContactCtaVisible(false);
+
+    return () => observer.disconnect();
+  }, [path, lang]);
 
   useEffect(() => {
     const updatePath = () => {
@@ -75,11 +93,13 @@ export default function App() {
       <main key={path}>{pages[active] || pages.home}</main>
       <Footer lang={lang} />
       <a
-        className="floating-whatsapp"
+        className={`floating-whatsapp${contactCtaVisible ? ' contact-cta-visible' : ''}`}
         href="https://wa.me/966534648751"
         target="_blank"
         rel="noreferrer"
         aria-label="WhatsApp"
+        aria-hidden={contactCtaVisible}
+        tabIndex={contactCtaVisible ? -1 : undefined}
       >
         <span className="whatsapp-dot" />
         <span>{lang === 'ar' ? 'تواصل معنا' : 'WhatsApp'}</span>

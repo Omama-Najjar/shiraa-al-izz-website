@@ -98,7 +98,7 @@ export default function Home({ lang }) {
         <div className="hero-overlay" aria-hidden="true" />
 
         <div className="hero-content">
-          <div className="hero-copy">
+          <div className="hero-copy" dir={ar ? 'rtl' : 'ltr'}>
             <p className="hero-kicker">
               <span aria-hidden="true" />
               {ar ? 'تراث أصيل .. لمجالس أرقى' : 'Authentic heritage for refined gatherings'}

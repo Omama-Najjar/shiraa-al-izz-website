@@ -148,3 +148,23 @@ body {
 .map-placeholder {
   background: radial-gradient(ellipse at 50% 50%, #42341e 0%, #20190f 50%, #050403 100%);
 }
+
+@media (max-width: 840px) {
+  .floating-whatsapp {
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .floating-whatsapp.contact-cta-visible {
+    display: none;
+  }
+
+  html[dir='rtl'] .floating-whatsapp {
+    right: max(12px, env(safe-area-inset-right, 0px));
+    left: auto;
+  }
+
+  html[dir='ltr'] .floating-whatsapp {
+    left: max(12px, env(safe-area-inset-left, 0px));
+    right: auto;
+  }
+}
