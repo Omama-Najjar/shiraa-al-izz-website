@@ -74,7 +74,7 @@ The production files are generated in `dist/`. The preview command serves that b
 
 The GitHub Actions workflow in `.github/workflows/deploy.yml` builds the site and deploys `dist/` to GitHub Pages. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. Push to the `main` branch or run the workflow manually from the Actions tab.
 
-The Vite base path is configured for this repository at `/shiraa-al-izz-website/`. The workflow also publishes the built entry page as `404.html` so client-side routes continue to load on GitHub Pages.
+The Vite base path is `/`, so routes and assets are served from the domain root. To use a custom domain, configure it in the repository's Pages settings and add a `CNAME` file containing the domain to `public/`; Vite copies it into the published site. The workflow also publishes the built entry page as `404.html` so client-side routes continue to load on GitHub Pages.
 
 ## Deploy to Firebase Hosting
 
