@@ -23,7 +23,7 @@ export default function About({ lang }) {
     <div className="about-page" dir={ar ? 'rtl' : 'ltr'}>
       <PageIntro
         eyebrow={ar ? 'حكايتنا' : 'OUR STORY'}
-        title={ar ? 'من نحن' : 'About us'}
+        title={ar ? 'عن مؤسسة شراع العز في المدينة المنورة' : 'About Sharaa Al-Izz in Madinah'}
         subtitle={ar ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents'}
         image="/images/approved-hero-landscape.webp"
       />
@@ -70,7 +70,10 @@ export default function About({ lang }) {
           >
             <img
               src={certificateUrl}
-              alt={ar ? 'شهادة السجل التجاري لمؤسسة شراع العز للخيام' : 'Commercial registration certificate for Sharaa Al-Izz Tents Establishment'}
+              alt="شهادة السجل التجاري لمؤسسة شراع العز للخيام"
+              width={1290}
+              height={768}
+              loading="lazy"
             />
           </a>
         </div>

@@ -94,7 +94,7 @@ export default function Home({ lang }) {
   return (
     <>
       <section className="home-hero" aria-label={ar ? 'الرئيسية' : 'Home'}>
-        <img className="hero-image" src={assetPath('/images/approved-hero-landscape.webp')} alt={ar ? 'خيمة ومجالس عربية' : 'Traditional tent and Arabic majlis'} />
+        <img className="hero-image" src={assetPath('/images/approved-hero-landscape.webp')} alt="خيمة ومجالس عربية" width={1164} height={611} fetchPriority="high" />
         <div className="hero-overlay" aria-hidden="true" />
 
         <div className="hero-content">
@@ -107,14 +107,14 @@ export default function Home({ lang }) {
 
             <h1
               className="hero-title"
-              data-title={ar ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents'}
+              data-title={ar ? 'مؤسسة شراع العز للخيام في المدينة المنورة' : 'Sharaa Al-Izz Tents in Madinah'}
               tabIndex={0}
               onPointerMove={handleTitlePointerMove}
               onPointerLeave={resetTitleEffect}
               onFocus={centerTitleEffect}
               onBlur={resetTitleEffect}
             >
-              {ar ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents'}
+              {ar ? 'مؤسسة شراع العز للخيام في المدينة المنورة' : 'Sharaa Al-Izz Tents in Madinah'}
               <span className="hero-title-sparks" aria-hidden="true">
                 {sparks.map((spark) => (
                   <span

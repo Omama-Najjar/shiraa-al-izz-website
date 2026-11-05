@@ -12,7 +12,7 @@ export default function Contact({ lang }) {
     <>
       <PageIntro
         eyebrow={ar ? 'نحن هنا لخدمتكم' : 'WE ARE HERE TO HELP'}
-        title={ar ? 'تواصل معنا' : 'Contact us'}
+        title={ar ? 'تواصل مع شراع العز في المدينة المنورة' : 'Contact Sharaa Al-Izz in Madinah'}
         subtitle={
           ar
             ? 'يسعدنا استقبال استفساراتكم عن المنتجات والطلبات الخاصة'
@@ -65,7 +65,7 @@ export default function Contact({ lang }) {
             </span>
           </div>
           <div className="whatsapp-qr-card">
-            <img src={assetPath('/images/whatsapp-qr.png')} alt={ar ? 'رمز QR للتواصل عبر واتساب' : 'WhatsApp contact QR code'} />
+            <img src={assetPath('/images/whatsapp-qr.png')} alt="رمز QR للتواصل مع مؤسسة شراع العز عبر واتساب" width={236} height={236} loading="lazy" />
             <div>
               <strong>{ar ? 'امسح الرمز للتواصل عبر واتساب' : 'Scan to chat on WhatsApp'}</strong>
               <p>{ar ? 'افتح كاميرا هاتفك ووجّهها إلى الرمز.' : 'Open your phone camera and point it at the code.'}</p>

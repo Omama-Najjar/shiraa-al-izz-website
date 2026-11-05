@@ -98,7 +98,7 @@ export default function Gallery({ lang }) {
     <>
       <PageIntro
         eyebrow={ar ? 'من أعمالنا' : 'OUR WORK'}
-        title={ar ? 'معرض الصور' : 'Gallery'}
+        title={ar ? 'أعمال الخيام والمنتجات في المدينة المنورة' : 'Tents and products in Madinah'}
         subtitle={ar ? 'صور من الخيام والمنتجات والأعمال' : 'Tents, products and completed work'}
         image="/images/approved-hero-landscape.webp"
       />
@@ -126,7 +126,7 @@ export default function Gallery({ lang }) {
             onClick={() => setLightboxOpen(true)}
             aria-label={ar ? `تكبير الصورة: ${photoTitle}` : `Enlarge photo: ${photoTitle}`}
           >
-            <img key={photo.src} src={photo.src} alt={photoTitle} fetchPriority="high" />
+            <img key={photo.src} src={photo.src} alt={photo.ar} width={photo.width} height={photo.height} fetchPriority="high" />
           </button>
           {controls}
         </div>
@@ -146,7 +146,7 @@ export default function Gallery({ lang }) {
               aria-label={ar ? `عرض الصورة ${index + 1}: ${item.ar}` : `Show photo ${index + 1}: ${item.en}`}
               aria-current={index === active ? 'true' : undefined}
             >
-              <img src={item.src} alt="" loading="lazy" />
+              <img src={item.src} alt={item.ar} width={item.width} height={item.height} loading="lazy" />
             </button>
           ))}
         </div>
@@ -176,7 +176,10 @@ export default function Gallery({ lang }) {
             key={`lightbox-${photo.src}`}
             className="gallery-lightbox-image"
             src={photo.src}
-            alt={photoTitle}
+            alt={photo.ar}
+            width={photo.width}
+            height={photo.height}
+            loading="lazy"
             onClick={(event) => event.stopPropagation()}
           />
         </div>

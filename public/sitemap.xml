@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sheraaelezz.com/</loc></url>
-  <url><loc>https://sheraaelezz.com/about</loc></url>
-  <url><loc>https://sheraaelezz.com/products</loc></url>
-  <url><loc>https://sheraaelezz.com/services</loc></url>
-  <url><loc>https://sheraaelezz.com/gallery</loc></url>
-  <url><loc>https://sheraaelezz.com/contact</loc></url>
-  <url><loc>https://sheraaelezz.com/tents</loc></url>
-  <url><loc>https://sheraaelezz.com/canopies-screens</loc></url>
-  <url><loc>https://sheraaelezz.com/majlis</loc></url>
-  <url><loc>https://sheraaelezz.com/outdoor-supplies</loc></url>
+  <url><loc>https://sheraaelezz.com/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://sheraaelezz.com/about/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://sheraaelezz.com/products/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://sheraaelezz.com/services/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://sheraaelezz.com/gallery/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://sheraaelezz.com/contact/</loc><lastmod>2026-11-05</lastmod></url>
 </urlset>

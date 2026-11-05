@@ -9,18 +9,8 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import { resolveRoutePath } from './utils/paths';
 import { routes } from './data/routes';
-import { pageSeo } from './data/seo';
+import Seo from './components/Seo';
 import './styles/header.css';
-
-function updateMeta(selector, attribute, value, createTag) {
-  let element = document.head.querySelector(selector);
-  if (!element) {
-    element = document.createElement('meta');
-    Object.entries(createTag).forEach(([key, tagValue]) => element.setAttribute(key, tagValue));
-    document.head.appendChild(element);
-  }
-  element.setAttribute(attribute, value);
-}
 
 export default function App() {
   const [lang, setLang] = useState('ar');
@@ -84,27 +74,11 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    const metadata = pageSeo[path] || pageSeo['/'];
-    const localizedMetadata = metadata[lang];
-    const canonicalUrl = `https://sheraaelezz.com${path === '/' ? '/' : path}`;
-
-    document.title = localizedMetadata.title;
-    updateMeta('meta[name="description"]', 'content', localizedMetadata.description, { name: 'description' });
-    updateMeta('meta[property="og:title"]', 'content', localizedMetadata.title, { property: 'og:title' });
-    updateMeta('meta[property="og:description"]', 'content', localizedMetadata.description, { property: 'og:description' });
-    updateMeta('meta[property="og:url"]', 'content', canonicalUrl, { property: 'og:url' });
-
-    let canonical = document.head.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute('href', canonicalUrl);
-  }, [lang, path]);
+  }, [lang]);
 
   return (
     <div className="app-shell">
+      <Seo path={path} lang={lang} />
       <Header lang={lang} setLang={setLang} active={active} />
       <main key={path}>{pages[active] || pages.home}</main>
       <Footer lang={lang} />

@@ -1,106 +1,62 @@
 export const pageSeo = {
   '/': {
     ar: {
-      title: 'مؤسسة شراع العز للخيام | خيام المدينة المنورة',
-      description: 'مؤسسة شراع العز للخيام في المدينة المنورة؛ نوفر الخيام وبيوت الشعر والمجالس العربية والمظلات والسواتر ومستلزمات الرحلات والتراث.',
+      title: 'خيام المدينة المنورة | مؤسسة شراع العز',
+      description: 'مؤسسة شراع العز للخيام في المدينة المنورة، للخيام وبيوت الشعر والمجالس العربية والمظلات ومستلزمات الرحلات.',
     },
     en: {
-      title: 'Sharaa Al-Izz Tents | Tents in Madinah',
-      description: 'Discover tents, traditional Bedouin houses, Arabic majlis seating, canopies and camping essentials from Sharaa Al-Izz Tents in Madinah.',
+      title: 'Tents in Madinah | Sharaa Al-Izz',
+      description: 'Sharaa Al-Izz Tents in Madinah offers tents, traditional Bedouin houses, Arabic majlis furnishings, canopies and outdoor supplies.',
     },
   },
   '/about': {
     ar: {
-      title: 'من نحن | مؤسسة شراع العز للخيام في المدينة المنورة',
-      description: 'تعرفوا على مؤسسة شراع العز للخيام في المدينة المنورة، وجهتكم للخيام وبيوت الشعر والمجالس العربية ومستلزمات التراث والرحلات.',
+      title: 'من نحن | شراع العز للخيام بالمدينة المنورة',
+      description: 'تعرفوا على مؤسسة شراع العز للخيام في المدينة المنورة، ومنتجاتها وخدماتها للبيوت والمزارع والرحلات.',
     },
     en: {
-      title: 'About Us | Sharaa Al-Izz Tents in Madinah',
-      description: 'Learn about Sharaa Al-Izz Tents, serving Madinah with tents, traditional Bedouin houses, Arabic majlis furnishings and heritage essentials.',
+      title: 'About Sharaa Al-Izz | Madinah',
+      description: 'Learn about Sharaa Al-Izz Tents in Madinah and its tents, Bedouin houses, majlis furnishings and outdoor products.',
     },
   },
   '/products': {
     ar: {
-      title: 'خيام وبيوت شعر ومستلزمات المخيمات | شراع العز',
-      description: 'استكشفوا منتجات شراع العز في المدينة المنورة: الخيام وبيوت الشعر، المجالس العربية، السجاد والمفروشات، المظلات والسواتر ومستلزمات الرحلات.',
+      title: 'خيام وبيوت شعر ومستلزمات مخيمات | شراع العز',
+      description: 'تصفحوا منتجات شراع العز في المدينة المنورة، من الخيام وبيوت الشعر إلى المجالس والمفروشات والمظلات ومستلزمات الرحلات.',
     },
     en: {
-      title: 'Tents, Bedouin Houses & Camping Essentials | Sharaa Al-Izz',
-      description: 'Browse tents, traditional Bedouin houses, Arabic majlis seating, carpets, canopies and camping essentials from Sharaa Al-Izz in Madinah.',
+      title: 'Tents, Bedouin Houses & Camping Supplies | Sharaa Al-Izz',
+      description: 'Browse tents, Bedouin houses, majlis seating, furnishings, canopies and camping supplies from Sharaa Al-Izz in Madinah.',
     },
   },
   '/services': {
     ar: {
-      title: 'تفصيل وتأجير الخيام وتركيب المظلات والسواتر | المدينة المنورة',
-      description: 'خدمات مؤسسة شراع العز في المدينة المنورة تشمل تفصيل الخيام وبيوت الشعر، تأجير الخيام، تركيب مظلات السيارات ومظلات الغنم والسواتر، وتجهيز المجالس العربية.',
+      title: 'تفصيل وتركيب الخيام والمظلات | شراع العز',
+      description: 'تعرفوا على خدمات شراع العز في المدينة المنورة لتفصيل الخيام وبيوت الشعر وتركيب المظلات والسواتر وتجهيز المجالس.',
     },
     en: {
-      title: 'Tent Tailoring & Rental, Canopies and Screens | Madinah',
-      description: 'Explore Sharaa Al-Izz services in Madinah, including custom tents and Bedouin houses, tent rental, canopies, privacy screens and Arabic majlis setup.',
+      title: 'Tent, Canopy & Screen Services | Sharaa Al-Izz',
+      description: 'Explore tent and Bedouin house tailoring, canopy and screen installation, and Arabic majlis setup in Madinah.',
     },
   },
   '/gallery': {
     ar: {
-      title: 'أعمال الخيام وبيوت الشعر والمجالس العربية | شراع العز',
-      description: 'شاهدوا صور الخيام وبيوت الشعر والمجالس العربية والمظلات والمنتجات التي تقدمها مؤسسة شراع العز للخيام في المدينة المنورة.',
+      title: 'صور الخيام وبيوت الشعر | شراع العز بالمدينة',
+      description: 'شاهدوا صور الخيام وبيوت الشعر والمجالس والمظلات والمنتجات التي تقدمها مؤسسة شراع العز في المدينة المنورة.',
     },
     en: {
-      title: 'Tents, Bedouin Houses & Arabic Majlis Gallery | Sharaa Al-Izz',
-      description: 'View photos of tents, traditional Bedouin houses, Arabic majlis seating, canopies and products from Sharaa Al-Izz Tents in Madinah.',
+      title: 'Tents & Bedouin Houses Gallery | Sharaa Al-Izz',
+      description: 'View tents, Bedouin houses, majlis seating, canopies and other products from Sharaa Al-Izz in Madinah.',
     },
   },
   '/contact': {
     ar: {
-      title: 'تواصل مع مؤسسة شراع العز للخيام | المدينة المنورة',
-      description: 'تواصلوا مع مؤسسة شراع العز للخيام في المدينة المنورة للاستفسار عن الخيام وبيوت الشعر والمجالس العربية والمنتجات والطلبات الخاصة.',
+      title: 'تواصل مع شراع العز للخيام | المدينة المنورة',
+      description: 'تواصلوا مع مؤسسة شراع العز للخيام في المدينة المنورة للاستفسار عن المنتجات والخدمات والطلبات الخاصة.',
     },
     en: {
       title: 'Contact Sharaa Al-Izz Tents | Madinah',
-      description: 'Contact Sharaa Al-Izz Tents in Madinah with questions about tents, traditional Bedouin houses, Arabic majlis furnishings and custom orders.',
+      description: 'Contact Sharaa Al-Izz Tents in Madinah to ask about products, services and custom orders.',
     },
   },
-};
-
-const businessId = 'https://sheraaelezz.com/#business';
-
-export const businessStructuredData = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Store',
-      '@id': businessId,
-      name: 'مؤسسة شراع العز للخيام',
-      url: 'https://sheraaelezz.com/',
-      telephone: '+966534648751',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'طريق تبوك، بعد الفحص الدوري، مقابل محطة شمان',
-        addressLocality: 'المدينة المنورة',
-        addressCountry: 'SA',
-      },
-      areaServed: {
-        '@type': 'City',
-        name: 'المدينة المنورة',
-      },
-    },
-    ...[
-      'خيام المدينة المنورة',
-      'تفصيل بيوت شعر',
-      'تأجير الخيام',
-      'تركيب مظلات السيارات',
-      'مظلات الغنم',
-      'تركيب السواتر',
-      'تجهيز المجالس العربية',
-      'مستلزمات الرحلات والمخيمات',
-    ].map((name, index) => ({
-      '@type': 'Service',
-      '@id': `https://sheraaelezz.com/#service-${index + 1}`,
-      name,
-      provider: { '@id': businessId },
-      areaServed: {
-        '@type': 'City',
-        name: 'المدينة المنورة',
-      },
-    })),
-  ],
 };

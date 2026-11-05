@@ -10,7 +10,7 @@ export default function Products({ lang }) {
     <div className="products-page" dir={ar ? 'rtl' : 'ltr'}>
       <PageIntro
         eyebrow={ar ? 'تشكيلة متنوعة' : 'OUR COLLECTION'}
-        title={ar ? 'منتجاتنا' : 'Our products'}
+        title={ar ? 'منتجات الخيام والمجالس في المدينة المنورة' : 'Tents and majlis products in Madinah'}
         subtitle={ar ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents'}
         image="/images/approved-hero-landscape.webp"
       />
@@ -22,8 +22,11 @@ export default function Products({ lang }) {
               <div className="product-image">
                 <img
                   src={category.image}
-                  alt={ar ? category.ar : category.en}
-                  loading={index > 3 ? 'lazy' : 'eager'}
+                  alt={category.ar}
+                  width={category.width}
+                  height={category.height}
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                  fetchPriority={index === 0 ? 'high' : undefined}
                 />
               </div>
               <div className="product-card-bottom">

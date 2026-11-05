@@ -5,7 +5,7 @@ import { assetPath, routePath } from '../utils/paths';
 import '../styles/header.css';
 
 export default function Header({lang,setLang,active}) {
- const [open,setOpen]=useState(false); const ar=lang==='ar'; const rightItems=navItems.slice(0,3); const leftItems=navItems.slice(3);
+ const [open,setOpen]=useState(false); const ar=lang==='ar'; const primaryItems=navItems.filter(item=>!item.landing); const rightItems=primaryItems.slice(0,3); const leftItems=primaryItems.slice(3);
  useEffect(() => {
   if (!open) return undefined;
   const closeOnEscape = (event) => {
@@ -26,7 +26,7 @@ export default function Header({lang,setLang,active}) {
   </div>
   <div className="header-main">
    <button className="mobile-menu" type="button" aria-label={open?(ar?'إغلاق القائمة':'Close menu'):(ar?'فتح القائمة':'Open menu')} aria-expanded={open} aria-controls="mobile-navigation" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button>
-   <a className="brand-lockup" href={routePath('/')} aria-label={ar?'مؤسسة شراع العز للخيام':'Sharaa Al-Izz Tents'}><img src={assetPath('/images/brand-lockup.png')} alt="مؤسسة شراع العز للخيام"/></a>
+   <a className="brand-lockup" href={routePath('/')} aria-label={ar?'مؤسسة شراع العز للخيام':'Sharaa Al-Izz Tents'}><img src={assetPath('/images/brand-lockup.png')} alt="شعار مؤسسة شراع العز للخيام" width={1692} height={930}/></a>
    <nav className="nav-links nav-left">{leftItems.map(item=><a key={item.key} className={active===item.key?'active':''} href={routePath(item.path)}>{ar?item.ar:item.en}</a>)}</nav><nav className="nav-links nav-right">{rightItems.map(item=><a key={item.key} className={active===item.key?'active':''} href={routePath(item.path)}>{ar?item.ar:item.en}</a>)}</nav>   <nav id="mobile-navigation" dir={ar?'rtl':'ltr'} style={{direction:ar?'rtl':'ltr'}} className={open?'nav-mobile open':'nav-mobile'}>{navItems.map(item=><a key={item.key} className={active===item.key?'active':''} href={routePath(item.path)} onClick={()=>setOpen(false)}>{ar?item.ar:item.en}</a>)}</nav>
    <a className="mobile-whatsapp" href="https://wa.me/966534648751" target="_blank" rel="noreferrer"><MessageCircle size={18}/></a>
   </div>

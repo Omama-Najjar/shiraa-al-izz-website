@@ -14,7 +14,7 @@ export default function Services({ lang }) {
     >
       <PageIntro
         eyebrow={ar ? 'ما نقدمه لكم' : 'WHAT WE DO'}
-        title={ar ? 'خدماتنا' : 'Our services'}
+        title={ar ? 'خدمات الخيام والمظلات في المدينة المنورة' : 'Tent and canopy services in Madinah'}
         subtitle={ar ? 'خدمات متنوعة لتجهيز الخيام والمجالس والمظلات' : 'Custom tents, majlis, canopies and more'}
         image="/images/approved-hero-landscape.webp"
       />
@@ -34,7 +34,9 @@ export default function Services({ lang }) {
               <div className="service-image">
                 <img
                   src={service.image}
-                  alt={ar ? service.ar : service.en}
+                  alt={service.ar}
+                  width={service.width}
+                  height={service.height}
                   loading="lazy"
                 />
                 <span>{String(index + 1).padStart(2, '0')}</span>

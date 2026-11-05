@@ -6,7 +6,7 @@ export function assetPath(path) {
 
 export function routePath(path) {
   const route = path.replace(/^\/+|\/+$/g, '');
-  return route ? `${baseUrl}${route}` : baseUrl;
+  return route ? `${baseUrl}${route}/` : baseUrl;
 }
 
 export function resolveRoutePath(pathname) {

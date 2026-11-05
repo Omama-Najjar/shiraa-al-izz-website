@@ -6,3 +6,5 @@ export const routes = {
   '/gallery': 'gallery',
   '/contact': 'contact',
 };
+
+export const routePaths = Object.keys(routes);
