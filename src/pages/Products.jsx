@@ -1,6 +1,7 @@
 import { categories } from '../data/content';
 import PageIntro from '../components/PageIntro';
 import { MessageCircle } from 'lucide-react';
+import { routePath } from '../utils/paths';
 import '../styles/products.css';
 
 export default function Products({ lang }) {
@@ -10,7 +11,7 @@ export default function Products({ lang }) {
     <div className="products-page" dir={ar ? 'rtl' : 'ltr'}>
       <PageIntro
         eyebrow={ar ? 'تشكيلة متنوعة' : 'OUR COLLECTION'}
-        title={ar ? 'منتجات الخيام والمجالس في المدينة المنورة' : 'Tents and majlis products in Madinah'}
+        title={ar ? 'منتجاتنا: خيام وبيوت شعر ومظلات في المدينة المنورة' : 'Our products: Tents, Bedouin houses and canopies in Madinah'}
         subtitle={ar ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents'}
         image="/images/approved-hero-landscape.webp"
       />
@@ -22,15 +23,18 @@ export default function Products({ lang }) {
               <div className="product-image">
                 <img
                   src={category.image}
-                  alt={category.ar}
+                  alt={ar ? category.altAr : category.altEn}
                   width={category.width}
                   height={category.height}
                   loading={index === 0 ? 'eager' : 'lazy'}
                   fetchPriority={index === 0 ? 'high' : undefined}
                 />
               </div>
-              <div className="product-card-bottom">
+              <div className="product-card-bottom" style={{ flexDirection: 'column' }}>
                 <h2>{ar ? category.ar : category.en}</h2>
+                <p style={{ color: 'var(--muted)', fontSize: '0.76rem', lineHeight: 1.6, margin: '7px 0 0' }}>
+                  {ar ? category.descriptionAr : category.descriptionEn}
+                </p>
               </div>
             </article>
           ))}
@@ -45,6 +49,10 @@ export default function Products({ lang }) {
             {ar
               ? 'يسعدنا مساعدتكم في اختيار المقاس والتصميم المناسب.'
               : 'We can help you discuss the right size and design.'}
+          </p>
+          <p>
+            {ar ? 'تعرّف على ' : 'Explore our '}
+            <a href={routePath('/services')}>{ar ? 'خدمات تفصيل وتركيب الخيام' : 'tent tailoring and installation services'}</a>.
           </p>
         </div>
         <a className="btn btn-gold" href="https://wa.me/966534648751" target="_blank" rel="noreferrer">

@@ -63,6 +63,7 @@ export default function Gallery({ lang }) {
 
   const photo = photos[active];
   const photoTitle = ar ? photo.ar : photo.en;
+  const photoAlt = ar ? photo.altAr : photo.altEn;
   const previousLabel = ar ? 'الصورة السابقة' : 'Previous photo';
   const nextLabel = ar ? 'الصورة التالية' : 'Next photo';
   const closeLabel = ar ? 'إغلاق العرض المكبّر' : 'Close enlarged view';
@@ -126,7 +127,7 @@ export default function Gallery({ lang }) {
             onClick={() => setLightboxOpen(true)}
             aria-label={ar ? `تكبير الصورة: ${photoTitle}` : `Enlarge photo: ${photoTitle}`}
           >
-            <img key={photo.src} src={photo.src} alt={photo.ar} width={photo.width} height={photo.height} fetchPriority="high" />
+            <img key={photo.src} src={photo.src} alt={photoAlt} width={photo.width} height={photo.height} fetchPriority="high" />
           </button>
           {controls}
         </div>
@@ -146,7 +147,7 @@ export default function Gallery({ lang }) {
               aria-label={ar ? `عرض الصورة ${index + 1}: ${item.ar}` : `Show photo ${index + 1}: ${item.en}`}
               aria-current={index === active ? 'true' : undefined}
             >
-              <img src={item.src} alt={item.ar} width={item.width} height={item.height} loading="lazy" />
+              <img src={item.src} alt={ar ? item.altAr : item.altEn} width={item.width} height={item.height} loading="lazy" />
             </button>
           ))}
         </div>
@@ -176,7 +177,7 @@ export default function Gallery({ lang }) {
             key={`lightbox-${photo.src}`}
             className="gallery-lightbox-image"
             src={photo.src}
-            alt={photo.ar}
+            alt={photoAlt}
             width={photo.width}
             height={photo.height}
             loading="lazy"

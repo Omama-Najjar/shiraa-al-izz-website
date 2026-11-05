@@ -21,31 +21,31 @@ export const pageSeo = {
   },
   '/products': {
     ar: {
-      title: 'خيام وبيوت شعر ومستلزمات مخيمات | شراع العز',
-      description: 'تصفحوا منتجات شراع العز في المدينة المنورة، من الخيام وبيوت الشعر إلى المجالس والمفروشات والمظلات ومستلزمات الرحلات.',
+      title: 'خيام وبيوت شعر ومظلات ومستلزمات رحلات | شراع العز',
+      description: 'تعرّف على الخيام وبيوت الشعر والمظلات والسواتر والمجالس ومستلزمات الرحلات والبر في المدينة المنورة، واطلب التفصيل أو الاستفسار عبر واتساب.',
     },
     en: {
-      title: 'Tents, Bedouin Houses & Camping Supplies | Sharaa Al-Izz',
-      description: 'Browse tents, Bedouin houses, majlis seating, furnishings, canopies and camping supplies from Sharaa Al-Izz in Madinah.',
+      title: 'Tents, Bedouin Houses, Canopies & Outdoor Supplies | Sharaa Al-Izz',
+      description: 'Explore tents, Bedouin houses, canopies, screens, majlis furnishings and outdoor supplies in Madinah. Request custom work or ask us on WhatsApp.',
     },
   },
   '/services': {
     ar: {
-      title: 'تفصيل وتركيب الخيام والمظلات | شراع العز',
-      description: 'تعرفوا على خدمات شراع العز في المدينة المنورة لتفصيل الخيام وبيوت الشعر وتركيب المظلات والسواتر وتجهيز المجالس.',
+      title: 'تفصيل وتركيب الخيام والمظلات | شراع العز المدينة المنورة',
+      description: 'نقدّم تفصيل وتركيب الخيام وبيوت الشعر والمظلات والسواتر، وصيانة وتصليح الخيام في المدينة المنورة. تواصل معنا لطلب الخدمة.',
     },
     en: {
-      title: 'Tent, Canopy & Screen Services | Sharaa Al-Izz',
-      description: 'Explore tent and Bedouin house tailoring, canopy and screen installation, and Arabic majlis setup in Madinah.',
+      title: 'Tent & Canopy Tailoring and Installation | Sharaa Al-Izz Madinah',
+      description: 'We tailor and install tents, Bedouin houses, canopies and screens, and repair tents in Madinah. Contact us to request a service.',
     },
   },
   '/gallery': {
     ar: {
-      title: 'صور الخيام وبيوت الشعر | شراع العز بالمدينة',
+      title: 'معرض أعمالنا: خيام وبيوت شعر ومظلات | شراع العز',
       description: 'شاهدوا صور الخيام وبيوت الشعر والمجالس والمظلات والمنتجات التي تقدمها مؤسسة شراع العز في المدينة المنورة.',
     },
     en: {
-      title: 'Tents & Bedouin Houses Gallery | Sharaa Al-Izz',
+      title: 'Our Work Gallery: Tents, Bedouin Houses & Canopies | Sharaa Al-Izz',
       description: 'View tents, Bedouin houses, majlis seating, canopies and other products from Sharaa Al-Izz in Madinah.',
     },
   },
