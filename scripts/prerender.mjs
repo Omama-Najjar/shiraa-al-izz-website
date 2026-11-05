@@ -10,7 +10,7 @@ import { canonicalFor } from '../src/data/site.js';
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const distRoot = resolve(projectRoot, 'dist');
 const pageHeadings = {
-  '/': 'مؤسسة شراع العز للخيام في المدينة المنورة',
+  '/': 'مؤسسة شراع العز للخيام',
   '/about': 'عن مؤسسة شراع العز في المدينة المنورة',
   '/products': 'منتجاتنا: خيام وبيوت شعر ومظلات في المدينة المنورة',
   '/services': 'خدمات تفصيل وتركيب الخيام والمظلات في المدينة المنورة',
