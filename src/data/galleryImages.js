@@ -50,6 +50,56 @@ const dimensions = {
   'real-tent-field.webp': [1600, 1200],
 };
 
+const photoDescriptions = {
+  '0bc2f68b-ade4-4a2b-8568-2502e374ceb5.jpg': { ar: 'مجلس خيمة مضاء بزخارف حمراء في المدينة المنورة', en: 'Tent majlis with red-patterned lighting in Madinah', altAr: 'مجلس خيمة مفروش بإضاءة حمراء', altEn: 'Furnished tent majlis with red lighting' },
+  '123cf333-78fa-413b-a544-e402ed4c595a.jpg': { ar: 'مشب معدني مزخرف في المدينة المنورة', en: 'Ornate metal fire feature in Madinah', altAr: 'مشب معدني مزخرف داخل معرض', altEn: 'Ornate metal fire feature inside a showroom', todo: 'TODO: owner to confirm item name' },
+  '13c2c6c5-0927-4ff1-b5c5-41b2b43309be.jpg': { ar: 'خيمة سوداء قيد التجهيز في المدينة المنورة', en: 'Black tent being prepared in Madinah', altAr: 'خيمة سوداء وهيكلها قيد التجهيز', altEn: 'Black tent and frame being prepared' },
+  '1ac3dd33-3aab-47ec-9e31-6d6aade76497.jpg': { ar: 'واجهة بيت شعر أسود في المدينة المنورة', en: 'Black Bedouin house entrance in Madinah', altAr: 'واجهة بيت شعر أسود مع سجادة عند المدخل', altEn: 'Black Bedouin house with a rug at the entrance' },
+  '1babf33b-8fcf-4cc9-ba2f-c1816781e0c8.jpg': { ar: 'لفائف أقمشة مخططة للخيام في المدينة المنورة', en: 'Striped tent fabric rolls in Madinah', altAr: 'لفائف أقمشة خيام سوداء وبيضاء وحمراء', altEn: 'Black, white and red tent fabric rolls' },
+  '2f4ac9dc-b8d4-4eb0-95f8-c1cdf374f549.jpg': { ar: 'قماش خيمة مخطط بجانب مركبة في المدينة المنورة', en: 'Striped tent fabric beside a vehicle in Madinah', altAr: 'قماش خيمة أسود مخطط ممدود على الأرض بجانب مركبة', altEn: 'Black striped tent fabric laid out beside a vehicle' },
+  '307d574b-48ef-4d51-9dad-40e4f9563ad9.jpg': { ar: 'بيت شعر أسود وسجادة مدخل في المدينة المنورة', en: 'Black Bedouin house and entrance rug in Madinah', altAr: 'بيت شعر أسود وسجادة حمراء عند المدخل', altEn: 'Black Bedouin house with a red entrance rug' },
+  '75c4a26c-eeb0-4d17-96b1-76b95abcc287.jpg': { ar: 'خيمة سوداء واسعة في المدينة المنورة', en: 'Spacious black tent in Madinah', altAr: 'خيمة سوداء واسعة في موقع مفتوح', altEn: 'Spacious black tent at an open site' },
+  '7bdf2d65-350d-47f3-9359-856ed99c51b1.jpg': { ar: 'خيمة سوداء مخططة في موقع مفتوح بالمدينة المنورة', en: 'Black striped tent at an open site in Madinah', altAr: 'خيمة سوداء مخططة مركبة في أرض مفتوحة', altEn: 'Installed black striped tent on open ground' },
+  '8d20fe6e-7925-4f62-9e3d-c82d8a42d933.jpg': { ar: 'مجلس عربي مفروش داخل خيمة في المدينة المنورة', en: 'Furnished Arabic majlis inside a tent in Madinah', altAr: 'مجلس عربي مفروش بالسجاد داخل خيمة مضاءة', altEn: 'Carpeted Arabic majlis inside an illuminated tent' },
+  '9c27e0d6-3730-4b4b-bf6b-c862161782f2.jpg': { ar: 'بيت شعر أبيض مضاء مساءً في المدينة المنورة', en: 'White Bedouin house illuminated at night in Madinah', altAr: 'بيت شعر أبيض مضاء في المساء', altEn: 'White Bedouin house illuminated in the evening' },
+  'b70c4044-5321-4d21-8ae4-64c9eac91399.jpg': { ar: 'خيمة سوداء مخططة من الجانب في المدينة المنورة', en: 'Side view of a black striped tent in Madinah', altAr: 'جانب خيمة سوداء مخططة في موقع مفتوح', altEn: 'Side of a black striped tent at an open site' },
+  'd746f69e-5ca7-4e97-8f49-c9e15839b6be.jpg': { ar: 'مشب معدني مزخرف بجانب خيمة في المدينة المنورة', en: 'Ornate metal fire feature beside a tent in Madinah', altAr: 'هيكل معدني مزخرف بجانب خيمة ليلية', altEn: 'Ornate metal structure beside a tent at night', todo: 'TODO: owner to confirm item name' },
+  'd8bff4a5-f6e9-4763-967d-259762219afb.jpg': { ar: 'خيمة سوداء بخطوط ذهبية في المدينة المنورة', en: 'Black tent with gold-colored stripes in Madinah', altAr: 'خيمة سوداء مخططة مضاءة ليلاً', altEn: 'Black striped tent illuminated at night' },
+  '1213f251-2da1-4790-a837-4d9279a90ca4.jpg': { ar: 'خيمة سوداء واسعة في موقع مفتوح بالمدينة المنورة', en: 'Wide black tent at an open site in Madinah', altAr: 'خيمة سوداء واسعة مع مدخل في موقع مفتوح', altEn: 'Wide black tent with an entrance at an open site' },
+  '61eabeaf-e34f-4eaf-9ee0-48591beb0eec.jpg': { ar: 'بيت شعر أبيض وأسود في المدينة المنورة', en: 'Black and white Bedouin house in Madinah', altAr: 'بيت شعر أبيض بخطوط سوداء في أرض مفتوحة', altEn: 'White Bedouin house with black stripes on open ground' },
+  '6d48e350-3634-45fd-92b4-0dd3190266bf.jpg': { ar: 'خيمة مخططة بجانب مبانٍ في المدينة المنورة', en: 'Striped tent beside buildings in Madinah', altAr: 'خيمة سوداء مخططة قرب مبنى', altEn: 'Black striped tent beside a building' },
+  'a557694f-6466-4427-8eaa-d82b3e04b99c.jpg': { ar: 'واجهة خيام وبيوت شعر في المدينة المنورة', en: 'Tent and Bedouin house fronts in Madinah', altAr: 'واجهات خيام وبيوت شعر مخططة', altEn: 'Fronts of striped tents and Bedouin houses' },
+  'b8dcc923-cb44-42a6-a4e2-367772a0b679.jpg': { ar: 'خيمة فاتحة اللون في أرض مفتوحة بالمدينة المنورة', en: 'Light-colored tent on open ground in Madinah', altAr: 'خيمة فاتحة اللون في موقع رملي', altEn: 'Light-colored tent at a sandy site' },
+  'ba632668-d064-4294-a55f-2761f53ecb32.jpg': { ar: 'بيت شعر مضاء في المدينة المنورة', en: 'Illuminated Bedouin house in Madinah', altAr: 'بيت شعر مضاء بزخارف تراثية', altEn: 'Bedouin house illuminated with heritage patterns' },
+  '04b5606b-5797-4d3b-9c67-cb8ce85e4c20.jpg': { ar: 'خيمة سوداء بفرش أحمر في المدينة المنورة', en: 'Black tent with red furnishings in Madinah', altAr: 'خيمة سوداء مع جلسة وسجادة حمراء مساءً', altEn: 'Black tent with red seating and rug in the evening' },
+  '3062720c-5090-4208-a1d6-2ad807c206a3.jpg': { ar: 'خيمة سوداء وسجادة مدخل في المدينة المنورة', en: 'Black tent and entrance rug in Madinah', altAr: 'واجهة خيمة سوداء مع سجادة حمراء عند المدخل', altEn: 'Black tent entrance with a red rug' },
+  '335bc580-85eb-478b-ac45-9909120683ac.jpg': { ar: 'واجهة بيت شعر أبيض وأسود في المدينة المنورة', en: 'White and black Bedouin house entrance in Madinah', altAr: 'بيت شعر أبيض وأسود بمدخل مفتوح', altEn: 'White and black Bedouin house with an open entrance' },
+  '5d2fca31-1d89-4e8f-a9a3-104e4799e911.jpg': { ar: 'خيمة بيضاء في موقع مفتوح بالمدينة المنورة', en: 'White tent at an open site in Madinah', altAr: 'خيمة بيضاء واسعة على أرض رملية', altEn: 'Wide white tent on sandy ground' },
+  '684a7f44-2ee5-42bd-9124-ee64710db135.jpg': { ar: 'مجلس خيمة مزخرف في المدينة المنورة', en: 'Patterned tent majlis in Madinah', altAr: 'خيمة مزخرفة بفرش تراثي وإضاءة ليلية', altEn: 'Patterned tent with heritage furnishings and night lighting' },
+  '9116398d-f59f-4ca0-b8ce-d3c79d4015ea.jpg': { ar: 'خيام سوداء وبيضاء أمام مبنى في المدينة المنورة', en: 'Black and white tents outside a building in Madinah', altAr: 'خيام سوداء وبيضاء مركبة أمام مبنى', altEn: 'Installed black and white tents outside a building' },
+  'b538fdb4-961a-416a-918e-9316511b58da.jpg': { ar: 'خيمة سوداء مخططة وسجادة في المدينة المنورة', en: 'Black striped tent and rug in Madinah', altAr: 'خيمة مخططة مع سجادة عند المدخل', altEn: 'Striped tent with a rug at the entrance' },
+  'cb1b4c17-23bd-458f-b608-a09cf9466af2.jpg': { ar: 'خيمة سوداء مخططة بإضاءة ليلية في المدينة المنورة', en: 'Black striped tent illuminated at night in Madinah', altAr: 'خيمة سوداء مخططة ومدخل مضاء ليلاً', altEn: 'Black striped tent with an illuminated entrance at night' },
+  'ea6a9af0-aa5d-46ca-97e1-d724329bee70.jpg': { ar: 'خيمة بيضاء في أرض مفتوحة بالمدينة المنورة', en: 'White tent on open ground in Madinah', altAr: 'خيمة بيضاء واسعة في موقع مفتوح', altEn: 'Wide white tent at an open site' },
+  'f1f8aafa-d768-4e3f-b8ac-e2c54fde2e3d.jpg': { ar: 'خيمة سوداء مخططة في المدينة المنورة', en: 'Black striped tent in Madinah', altAr: 'خيمة سوداء مخططة في موقع مفتوح', altEn: 'Black striped tent at an open site' },
+  'f83a3b97-d500-4109-b398-9ad2ab3e4a59.jpg': { ar: 'خيمة سوداء بجانب منزل في المدينة المنورة', en: 'Black tent beside a house in Madinah', altAr: 'خيمة سوداء مركبة بجانب منزل', altEn: 'Black tent installed beside a house' },
+  '4eceb71a-10c8-4786-b4a1-7949a0880d02.jpg': { ar: 'خيمة شعر سوداء على سطح مبنى في المدينة المنورة', en: 'Black Bedouin tent on a rooftop in Madinah', altAr: 'خيمة شعر سوداء بخطوط بيضاء على سطح مبنى', altEn: 'Black Bedouin tent with white stripes on a rooftop' },
+  '6f9f4744-f381-42ce-ae6a-dcea6b97b080.jpg': { ar: 'خيمة شعر سوداء في موقع صحراوي بالمدينة المنورة', en: 'Black Bedouin tent at a desert site in Madinah', altAr: 'خيمة شعر سوداء مخططة على أرض صحراوية', altEn: 'Black striped Bedouin tent on desert ground' },
+  'b2ff3488-e4db-47ac-869a-5cac311efbc5.jpg': { ar: 'خيمة شعر مضاءة ليلاً في المدينة المنورة', en: 'Bedouin tent illuminated at night in Madinah', altAr: 'خيمة شعر سوداء مضاءة في الليل', altEn: 'Black Bedouin tent illuminated at night' },
+  'c03558f1-e841-4cdf-95aa-304f4457fc76.jpg': { ar: 'بيت شعر أبيض في المدينة المنورة', en: 'White Bedouin house in Madinah', altAr: 'بيت شعر أبيض واسع على أرض مفتوحة', altEn: 'Wide white Bedouin house on open ground' },
+  'e59aa36c-03a8-4058-9363-ea36ba560fdf.jpg': { ar: 'خيمة شعر في فناء بالمدينة المنورة', en: 'Bedouin tent in a courtyard in Madinah', altAr: 'خيمة شعر سوداء في فناء بجوار مبنى', altEn: 'Black Bedouin tent in a courtyard beside a building' },
+  'ec1974a4-a453-43e4-ac8c-c819411849c5.jpg': { ar: 'خيمة شعر سوداء في موقع صحراوي بالمدينة المنورة', en: 'Black Bedouin tent at a desert site in Madinah', altAr: 'خيمة سوداء بخطوط فاتحة في أرض مفتوحة', altEn: 'Black tent with light stripes on open ground' },
+  'efb4cf86-edef-495f-a20c-1081f647c1ed.jpg': { ar: 'خيمة تراثية فاتحة اللون في المدينة المنورة', en: 'Light-colored heritage tent in Madinah', altAr: 'جانب خيمة تراثية فاتحة اللون', altEn: 'Side of a light-colored heritage tent' },
+  'real-tent-black.webp': { ar: 'خيمة شعر سوداء في المدينة المنورة', en: 'Black Bedouin tent in Madinah', altAr: 'خيمة شعر سوداء مخططة في موقع مفتوح', altEn: 'Black striped Bedouin tent at an open site' },
+  'real-tent-side.webp': { ar: 'خيمة بخطوط تراثية في المدينة المنورة', en: 'Striped heritage tent in Madinah', altAr: 'واجهة خيمة بخطوط تراثية ومدخل مفتوح', altEn: 'Striped heritage tent with an open entrance' },
+  'real-tent-white.webp': { ar: 'خيمة بيضاء في المدينة المنورة', en: 'White tent in Madinah', altAr: 'خيمة بيضاء بخطوط سوداء على أرض رملية', altEn: 'White tent with black stripes on sandy ground' },
+  'real-patterned-tent.webp': { ar: 'خيمة تراثية مزخرفة في المدينة المنورة', en: 'Patterned heritage tent in Madinah', altAr: 'خيمة تراثية مزخرفة بمدخل مفروش', altEn: 'Patterned heritage tent with a furnished entrance' },
+  'real-majlis-red.webp': { ar: 'مجلس عربي تراثي في المدينة المنورة', en: 'Traditional Arabic majlis in Madinah', altAr: 'مجلس عربي داخل خيمة مضاءة بزخارف حمراء', altEn: 'Arabic majlis inside a tent with red-patterned lighting' },
+  'product-carpet-reference.png': { ar: 'سجاد تراثي في المدينة المنورة', en: 'Heritage carpet in Madinah', altAr: 'سجاد تراثي ملون بنقوش هندسية', altEn: 'Colorful heritage carpet with geometric patterns' },
+  'real-livestock-shade.webp': { ar: 'مظلة أغنام في المدينة المنورة', en: 'Sheep shade canopy in Madinah', altAr: 'مظلة قماشية لمجموعة من الأغنام', altEn: 'Fabric shade canopy for a group of sheep' },
+  'real-canopy.webp': { ar: 'مظلة خارجية بإطار معدني في المدينة المنورة', en: 'Outdoor canopy with a metal frame in Madinah', altAr: 'مظلة خارجية قماشية بإطار معدني', altEn: 'Outdoor fabric canopy with a metal frame' },
+  'real-tent-field.webp': { ar: 'خيمة مجهزة في موقع مفتوح بالمدينة المنورة', en: 'Prepared tent at an open site in Madinah', altAr: 'خيمة بيضاء مخططة مجهزة على أرض مفتوحة', altEn: 'Prepared white striped tent on open ground' },
+};
+
 const galleryImages = [
   {
     src: '/images/gallery/0bc2f68b-ade4-4a2b-8568-2502e374ceb5.jpg',
@@ -287,8 +337,11 @@ const galleryImages = [
     en: 'Tent at site',
   },
 ].map((image) => {
-  const [width, height] = dimensions[image.src.split('/').pop()];
-  return { ...image, src: assetPath(image.src), width, height };
+  const filename = image.src.split('/').pop();
+  const [width, height] = dimensions[filename];
+  const description = photoDescriptions[filename];
+  if (!description) throw new Error(`Missing gallery caption and alt text for ${filename}`);
+  return { ...image, ...description, src: assetPath(image.src), width, height };
 });
 
 export default galleryImages;

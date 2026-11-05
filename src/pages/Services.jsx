@@ -14,7 +14,7 @@ export default function Services({ lang }) {
     >
       <PageIntro
         eyebrow={ar ? 'ما نقدمه لكم' : 'WHAT WE DO'}
-        title={ar ? 'خدمات الخيام والمظلات في المدينة المنورة' : 'Tent and canopy services in Madinah'}
+        title={ar ? 'خدمات تفصيل وتركيب الخيام والمظلات في المدينة المنورة' : 'Tent and canopy tailoring and installation in Madinah'}
         subtitle={ar ? 'خدمات متنوعة لتجهيز الخيام والمجالس والمظلات' : 'Custom tents, majlis, canopies and more'}
         image="/images/approved-hero-landscape.webp"
       />
@@ -34,15 +34,19 @@ export default function Services({ lang }) {
               <div className="service-image">
                 <img
                   src={service.image}
-                  alt={service.ar}
+                  alt={ar ? service.altAr : service.altEn}
                   width={service.width}
                   height={service.height}
-                  loading="lazy"
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                  fetchPriority={index === 0 ? 'high' : undefined}
                 />
                 <span>{String(index + 1).padStart(2, '0')}</span>
               </div>
               <div className="service-card-copy">
                 <h3>{ar ? service.ar : service.en}</h3>
+                <p style={{ color: 'var(--muted)', fontSize: '0.78rem', lineHeight: 1.6, margin: 0 }}>
+                  {ar ? service.descriptionAr : service.descriptionEn}
+                </p>
                 <a
                   href={`https://wa.me/966534648751?text=${encodeURIComponent(
                     ar
@@ -66,8 +70,8 @@ export default function Services({ lang }) {
           <h2>{ar ? 'توصيل إلى جميع أنحاء المملكة' : 'Delivery throughout Saudi Arabia'}</h2>
           <p>
             {ar
-              ? 'تواصلوا معنا للاستفسار عن خيارات التوصيل وتفاصيل الطلب.'
-              : 'Contact us to discuss delivery options and order details.'}
+              ? <>استفسر عن خيارات التوصيل وتفاصيل الطلب عبر <a href="/contact/">صفحة التواصل</a>.</>
+              : <>Ask about delivery options and order details on our <a href="/contact/">contact page</a>.</>}
           </p>
         </div>
         <a className="btn btn-gold" href="https://wa.me/966534648751" target="_blank" rel="noreferrer">
