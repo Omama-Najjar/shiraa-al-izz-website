@@ -107,14 +107,14 @@ export default function Home({ lang }) {
 
             <h1
               className="hero-title"
-              data-title={ar ? 'مؤسسة شراع العز للخيام في المدينة المنورة' : 'Sharaa Al-Izz Tents in Madinah'}
+              data-title={ar ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents'}
               tabIndex={0}
               onPointerMove={handleTitlePointerMove}
               onPointerLeave={resetTitleEffect}
               onFocus={centerTitleEffect}
               onBlur={resetTitleEffect}
             >
-              {ar ? 'مؤسسة شراع العز للخيام في المدينة المنورة' : 'Sharaa Al-Izz Tents in Madinah'}
+              {ar ? 'مؤسسة شراع العز للخيام' : 'Sharaa Al-Izz Tents'}
               <span className="hero-title-sparks" aria-hidden="true">
                 {sparks.map((spark) => (
                   <span
@@ -133,7 +133,7 @@ export default function Home({ lang }) {
               </span>
             </h1>
             <p className="hero-subtitle">
-              {ar ? 'خيام وبيوت الشعر والتراثيات وسجاد ومجالس عربية' : 'Traditional tents, heritage homes, rugs and Arabic majlis essentials'}
+              {ar ? 'خيام وبيوت شعر ومظلات ومجالس عربية في المدينة المنورة' : 'Tents, Bedouin houses, canopies and Arabic majlis in Madinah'}
             </p>
 
             <div className="hero-feature-list" aria-label={ar ? 'فئات المنتجات' : 'Product categories'}>
